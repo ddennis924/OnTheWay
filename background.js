@@ -8,19 +8,13 @@ chrome.runtime.onInstalled.addListener(() => {
   });
 });
 
-let config = {
-  method: "get",
-  url: "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=amoeba&types=establishment&location=37.76999%2C-122.44696&radius=500&key=AIzaSyAZ3UzTvhTx_j3426fqujedzYw_f7_d8zA",
-  headers: {},
-};
-
 function getAddr(info, tab) {
   console.log("Word " + info.selectionText + " was clicked.");
   const addr = info.selectionText.replace(" ", "+");
   const url =
     "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/autocomplete/json?input=" +
     addr +
-    "&location=49.2291114%2C-123.1098592&radius=500&key=AIzaSyAZ3UzTvhTx_j3426fqujedzYw_f7_d8zA";
+    "&location=49.2291114%2C-123.1098592&radius=500&key=YOUR_API_KEY";
   const options = {
     method: "GET",
     headers: {},
