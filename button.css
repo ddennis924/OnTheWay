@@ -1,0 +1,61 @@
+#add {
+  height: 20px;
+  width: 100px;
+  margin: 5px;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  border: none;
+  border-radius: 2px;
+  background-color: rgb(205, 205, 205);
+  color: rgb(32, 33, 36);
+  border-radius: 8px;
+}
+
+#add:hover {
+  background-color: rgb(165, 165, 165);
+  cursor: pointer;
+}
+
+button {
+  height: 40px;
+  width: 100px;
+  outline: none;
+  margin: 5px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgb(48, 49, 52);
+  color: white;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: rgb(72, 73, 77);
+  cursor: pointer;
+}
+
+button.current {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+}
+
+form {
+  align-items: center;
+  text-align: center;
+}
+
+input {
+  height: 20px;
+  width: 100px;
+  outline: none;
+  margin: 2px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(32, 33, 36);
+  border-radius: 8px;
+}
+
+body {
+  background-color: rgb(32, 33, 36);
+}
